@@ -13,7 +13,9 @@ class MousewheelAsset extends AssetBundle
 {
     public $sourcePath = '@bower/jquery-mousewheel';
 
-    public $js = ['jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js'];
+    public $js = [
+        'source/jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js'
+    ];
 
     public $css = [];
 
@@ -21,8 +23,4 @@ class MousewheelAsset extends AssetBundle
         'yii\web\JqueryAsset',
         'newerton\fancybox\FancyBoxAsset',
     ];
-
-    public function registerAssetFiles($view) {
-        parent::registerAssetFiles($view);
-    }
 }
