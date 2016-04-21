@@ -1,5 +1,5 @@
 {
-    "name": "newerton/yii2-fancybox",
+    "name": "nafania/yii2-fancybox",
     "description": "fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.",
     "type": "yii2-extension",
     "keywords": ["yii2", "extension", "fancyapps", "fancybox"],
