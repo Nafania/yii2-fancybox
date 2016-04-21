@@ -13,7 +13,7 @@ class MousewheelAsset extends AssetBundle
 {
     public $sourcePath = '@bower/jquery-mousewheel';
 
-    public $js = [];
+    public $js = ['jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js'];
 
     public $css = [];
 
@@ -23,7 +23,6 @@ class MousewheelAsset extends AssetBundle
     ];
 
     public function registerAssetFiles($view) {
-        $this->js[] = 'jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js';
         parent::registerAssetFiles($view);
     }
 }
