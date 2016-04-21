@@ -14,7 +14,7 @@ class MousewheelAsset extends AssetBundle
     public $sourcePath = '@bower/jquery-mousewheel';
 
     public $js = [
-        'source/jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js'
+        'jquery.mousewheel' . (!YII_DEBUG ? '.min' : '') . '.js'
     ];
 
     public $css = [];
