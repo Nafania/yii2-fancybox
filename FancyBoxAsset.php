@@ -12,7 +12,9 @@ class FancyBoxAsset extends AssetBundle
 {
     public $sourcePath = '@bower/fancybox';
 
-    public $js = ['jquery.fancybox' . (!YII_DEBUG ? '.pack' : '') . '.js'];
+    public $js = [
+        'source/jquery.fancybox' . (!YII_DEBUG ? '.pack' : '') . '.js'
+    ];
     
     public $css = [
         'source/jquery.fancybox.css'
@@ -20,8 +22,4 @@ class FancyBoxAsset extends AssetBundle
     public $depends = [
         'yii\web\JqueryAsset',
     ];
-    
-    public function registerAssetFiles($view) {
-        parent::registerAssetFiles($view);
-    }
 } 
